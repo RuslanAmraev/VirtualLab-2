@@ -35,13 +35,18 @@ function selectPage(id){
 
     document.getElementById("content1").style.display = 'none'
     document.getElementById("content2").style.display = 'none'
+    document.getElementById("content3").style.display = 'none'
 
    switch(id){
     case "menu-el-1":
      document.getElementById("content1").style.display = 'block'
      return;
-    case"menu-el-2":
+     case"menu-el-2":
      document.getElementById("content2").style.display = 'block'
+     return
+     case"menu-el-3":
+     document.getElementById("content3").style.display = 'block'
+     return
 
    }
     
