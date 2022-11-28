@@ -26,3 +26,23 @@ setInterval(()=>{
         fButtonState = true
     }
 }, 500)
+
+function selectPage(id){
+    ["menu-el-1","menu-el-2","menu-el-3"].map(el=>{
+        document.getElementById(el).className = 'menu-el'
+    })
+   document.getElementById(id).className = 'menu-el menu-el-active'
+
+    document.getElementById("content1").style.display = 'none'
+    document.getElementById("content2").style.display = 'none'
+
+   switch(id){
+    case "menu-el-1":
+     document.getElementById("content1").style.display = 'block'
+     return;
+    case"menu-el-2":
+     document.getElementById("content2").style.display = 'block'
+
+   }
+    
+}

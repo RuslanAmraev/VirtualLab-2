@@ -38,12 +38,12 @@
     </div>
     <div id="third-page" class="third-page center animate__animated">
         <ul class="menu">
-            <li class="menu-el menu-el-active">Установка</li>
-            <li class="menu-el">Блабла 1</li>
-            <li class="menu-el">Блабла 2</li>
+            <li onclick="selectPage('menu-el-1')" id="menu-el-1" class="menu-el menu-el-active">Установка</li>
+            <li onclick="selectPage('menu-el-2')" id="menu-el-2"  class="menu-el">Возможности</li>
+            <li onclick="selectPage('menu-el-3')" id="menu-el-3"  class="menu-el">Создание таблицы</li>
         </ul>
         <div class="content-block">
-            <div class="content1">
+            <div class="content1" id="content1">
                 <p class="content-title">
                     Установка
                 </p>
@@ -69,6 +69,24 @@
                         </ul>
                         <img class="install-clicking" src="./img/installing.gif" alt="">
                     </div>
+                    <div>
+                        <ul>
+                            <li>4) Пройдите процесс установки</li>
+                        </ul>
+                        <img class="install-clicking" src="./img/Screenshot_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content1" id="content2" style="padding: 0 30px; display: none;" >
+                <p class="content-title">
+                    Возможности
+                </p>
+                <p>
+                    Документы, Таблицы и Презентации
+                    Основная статья: Google Документы
+                    Google Документы, Таблицы и Презентации — это бесплатный пакет офисных веб-приложений, интегрированный с Google Диском. С его помощью можно создавать и редактировать документы онлайн и работать над ними вместе с другими пользователями в режиме реального времени. С октября 2012 года эти названия официально используются для текстового процессора, редактора электронных таблиц и приложения для работы с презентациями. Все три сервиса доступны в виде веб-приложений, приложений Chrome с поддержкой офлайн-режима, а также мобильных приложений для Android и iOS и поддерживают форматы Microsoft Office.
+                <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <img style="height: 250px;" src="./img/google-docs-sheets-and-slides_fbrz.jpg" alt="">
                 </div>
             </div>
         </div>

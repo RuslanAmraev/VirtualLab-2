@@ -96,7 +96,7 @@ p{
     z-index: -1;
     display: none;
     background-color: blueviolet;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu-el{
@@ -105,7 +105,6 @@ p{
 
 .menu-el:hover{
     color: azure;
-    margin-left: 10px;
 }
 
 .menu-el-active{
@@ -123,6 +122,10 @@ p{
     font-size: 30px;
     overflow: scroll;
     overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 100px;
 }
 
 .content-block::-webkit-scrollbar {
@@ -145,4 +148,8 @@ p{
 
 .install-clicking{
     height: 240px;
+}
+
+.hidden{
+    display: none;
 }
